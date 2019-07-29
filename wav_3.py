@@ -1,0 +1,5 @@
+import wave
+w = wave.open('/usr/share/sounds/ekiga/voicemail.wav', 'r')
+for i in range(w.getnframes()):
+    frame = w.readframes(i)
+    print frame
